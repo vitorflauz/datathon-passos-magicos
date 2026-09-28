@@ -17,7 +17,6 @@ O modelo prevê quem vai entrar em defasagem ou aprofundá-la no ano seguinte. N
 ```
 app/          app Streamlit (app.py)
 dados/        base original do PEDE; dados/tratados/ tem a base limpa (pede_long.csv)
-entrega/      apresentação (pptx e pdf) e roteiro do vídeo
 figuras/      gráficos salvos pelos notebooks
 modelos/      modelo treinado (modelo_risco.joblib) e métricas (modelo_info.json)
 notebooks/    01 limpeza, 02 análise exploratória, 03 modelo preditivo
