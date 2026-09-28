@@ -1,0 +1,9 @@
+# Ambiente
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# enunciado e relatórios do PEDE (arquivos grandes)
+dados/*.pdf
+dados/*.docx
+POSTECH - Datathon - Fase 5.pdf

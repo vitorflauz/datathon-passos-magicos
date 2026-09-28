@@ -1,0 +1,87 @@
+{
+  "modelo": "Random Forest (300 árvores, min_samples_leaf=10, class_weight=balanced)",
+  "target": "Defasagem piora de t para t+1 e o aluno termina t+1 defasado",
+  "features": [
+    "fase",
+    "idade",
+    "defasagem",
+    "anos_programa",
+    "iaa",
+    "ieg",
+    "ips",
+    "ida",
+    "ipv",
+    "mat",
+    "por",
+    "gap_autoavaliacao"
+  ],
+  "limiar": 0.4654,
+  "treinado_com": "1273 pares aluno/ano (2022->2023 e 2023->2024)",
+  "metricas_teste_2023_2024": {
+    "roc_auc": 0.8947,
+    "precisao_media": 0.6657,
+    "recall": 0.7368,
+    "precisao": 0.535,
+    "pct_sinalizados": 0.2269,
+    "taxa_base": 0.1647
+  },
+  "importancia_permutacao": {
+    "idade": 0.1303,
+    "defasagem": 0.0439,
+    "ipv": 0.0319,
+    "anos_programa": 0.01,
+    "ida": 0.0088,
+    "por": 0.0076,
+    "gap_autoavaliacao": 0.0075,
+    "mat": 0.0026,
+    "fase": 0.0025,
+    "ieg": 0.0017,
+    "iaa": 0.0015,
+    "ips": 0.0002
+  },
+  "comparacao_modelos": {
+    "Regressão Logística": {
+      "AUC_cv": 0.8037,
+      "AP_cv": 0.4187,
+      "AUC_teste": 0.8073,
+      "AP_teste": 0.4942
+    },
+    "Árvore de Decisão": {
+      "AUC_cv": 0.7926,
+      "AP_cv": 0.403,
+      "AUC_teste": 0.6809,
+      "AP_teste": 0.3874
+    },
+    "KNN": {
+      "AUC_cv": 0.7787,
+      "AP_cv": 0.357,
+      "AUC_teste": 0.8448,
+      "AP_teste": 0.6107
+    },
+    "SVM (RBF)": {
+      "AUC_cv": 0.8185,
+      "AP_cv": 0.4248,
+      "AUC_teste": 0.836,
+      "AP_teste": 0.6232
+    },
+    "Random Forest": {
+      "AUC_cv": 0.848,
+      "AP_cv": 0.4704,
+      "AUC_teste": 0.8947,
+      "AP_teste": 0.6657
+    },
+    "Extra Trees": {
+      "AUC_cv": 0.8457,
+      "AP_cv": 0.4414,
+      "AUC_teste": 0.8956,
+      "AP_teste": 0.6811
+    },
+    "Gradient Boosting": {
+      "AUC_cv": 0.834,
+      "AP_cv": 0.4742,
+      "AUC_teste": 0.888,
+      "AP_teste": 0.6102
+    }
+  },
+  "sklearn": "1.8.0"
+}

@@ -1,0 +1,38 @@
+# Tema com as cores da FIAP, as mesmas da apresentação.
+# Montserrat no lugar da Gotham (fonte da FIAP, que é paga).
+[theme]
+font = "Montserrat:https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+headingFont = "Newsreader:https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap"
+headingFontWeights = [600, 600, 600, 600, 500, 500]
+headingFontSizes = ["38px", "26px", "21px", "17px", "15px", "13px"]
+baseFontSize = 15
+baseRadius = "small"
+buttonRadius = "small"
+showWidgetBorder = true
+linkUnderline = false
+
+[theme.light]
+primaryColor = "#D30F59"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F4F5F6"
+textColor = "#181818"
+borderColor = "#E3E6E8"
+dataframeBorderColor = "#E3E6E8"
+dataframeHeaderBackgroundColor = "#F4F5F6"
+redColor = "#D30F59"
+greenColor = "#2F7D5B"
+grayColor = "#75838B"
+chartCategoricalColors = ["#181818", "#D30F59", "#91A3AD", "#BDC3C8"]
+
+[theme.dark]
+primaryColor = "#ED145B"
+backgroundColor = "#0E0F10"
+secondaryBackgroundColor = "#1A1C1E"
+textColor = "#ECEEF0"
+borderColor = "#2A2D30"
+dataframeBorderColor = "#2A2D30"
+dataframeHeaderBackgroundColor = "#1A1C1E"
+redColor = "#FF4F86"
+greenColor = "#5DB88E"
+grayColor = "#91A3AD"
+chartCategoricalColors = ["#ECEEF0", "#ED145B", "#91A3AD", "#3A3F44"]
